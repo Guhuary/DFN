@@ -3,7 +3,7 @@
 ## Introduction 
 Recently, deep convolutional neural network has achieved great success for single-image deraining. However, affected by the intrinsic overlapping between rain streaks and background texture patterns, most of these methods tend to more or less remove texture details in rain-free regions and lead oversmoothing effect in the recovered background. In order to generate reasonable rain streak layer and improve reconstruc- tion quality of background, we propose a distributed feedback network (DFN) in recurrent structure. A novel feedback block is designed to implement feedback mechanism. In each feedback block, hidden state with high-level information (output) will flow into the next iteration to correct the low-level representations (in- put). By stacking multiple feedback blocks, the proposed network where the hidden states are distributed can extract powerful high- level representations for rain streak layer. Curriculum learning is employed to connect the loss of each iteration and ensure hidden states contain the notion of output. In addition, a self-ensemble strategy for rain removal task which can keep the vertical character of rain streak is explored to maximize the potential performance of deraining model. Extensive experimental results demonstrate the superiority of DFN in comparison with the state- of-the-art methods.
 
-![image](https://github.com/Hang-Z/DFN/blob/master/Images/structure.png)
+![image](https://github.com/Guhuary/DFN/structure.png)
 
 ## Requirements
 
@@ -47,7 +47,7 @@ Rain12|32.02/0.855|31.78/0.900|29.45/0.938|-|34.02/0.935|36.66/0.961|36.74/0.959
 
 
 
-![image](https://github.com/Hang-Z/DFN/blob/master/Images/results.png)
+![image](https://github.com/Guhuary/DFN/results.png)
 
 ## References
 [1]Yang W, Tan R, Feng J, Liu J, Guo Z, and Yan S. Deep joint rain detection and removal from a single image. In IEEE CVPR 2017.
