@@ -28,7 +28,7 @@ All the pre-trained models were placed in `./logs/`.
 Run the `test_DFN.py` to obtain the deraining images. Then, you can calculate the evaluation metrics by run the MATLAB scripts in `./statistics/`. For example, if you want to compute the average PSNR and SSIM on Rain100L, you can run the `Rain100L.m`.
 
 ### Train
-If you want to train the models, you can run the `train_DFN.py` and don't forget to change the `args` in this file. Or, you can run in the terminal by the following code.
+If you want to train the models, you can run the `train_DFN.py` and don't forget to change the `args` in this file. Or, you can run in the terminal by the following code:
 
 `python train_DFN.py --save_path path_to_save_trained_models  --data_path path_of_the_training_dataset`
 
