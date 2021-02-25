@@ -23,14 +23,14 @@ DFN is trained and tested on five benchamark datasets: Rain100L[1],Rain100H[1],R
 
 ## Getting Started
 ### Test
-All the pre-trained models were placed in `./models/`.
+All the pre-trained models were placed in `./logs/`.
 
-Run the `test.py` to obtain the deraining images. Then, you can calculate the evaluation metrics by run the MATLAB scripts in `./statistics/`. For example, if you want to compute the average PSNR and SSIM on Rain100L, you can run the `Rain100L.m`.
+Run the `test_DFN.py` to obtain the deraining images. Then, you can calculate the evaluation metrics by run the MATLAB scripts in `./statistics/`. For example, if you want to compute the average PSNR and SSIM on Rain100L, you can run the `Rain100L.m`.
 
 ### Train
-If you want to train the models, you can run the `train.py` and don't forget to change the `args` in this file. Or, you can run in the terminal by the following code.
+If you want to train the models, you can run the `train_DFN.py` and don't forget to change the `args` in this file. Or, you can run in the terminal by the following code.
 
-`python train.py --save_path path_to_save_trained_models  --data_path path_to_training_dataset`
+`python train_DFN.py --save_path path_to_save_trained_models  --data_path path_to_training_dataset`
 
 ### Results
 
