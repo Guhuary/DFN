@@ -1,7 +1,7 @@
 # DFN：Distributed Feedback Network for Single-Image  Deraining
 
 ## Introduction 
-Recently, deep convolutional neural network has achieved great success for single-image deraining. However, affected by the intrinsic overlapping between rain streaks and background texture patterns, most of these methods tend to more or less remove texture details in rain-free regions and lead oversmoothing effect in the recovered background. In order to generate reasonable rain streak layer and improve reconstruc- tion quality of background, we propose a distributed feedback network (DFN) in recurrent structure. A novel feedback block is designed to implement feedback mechanism. In each feedback block, hidden state with high-level information (output) will flow into the next iteration to correct the low-level representations (in- put). By stacking multiple feedback blocks, the proposed network where the hidden states are distributed can extract powerful high- level representations for rain streak layer. Curriculum learning is employed to connect the loss of each iteration and ensure hidden states contain the notion of output. In addition, a self-ensemble strategy for rain removal task which can keep the vertical character of rain streak is explored to maximize the potential performance of deraining model. Extensive experimental results demonstrate the superiority of DFN in comparison with the state- of-the-art methods.
+Recently, deep convolutional neural network has achieved great success for single-image deraining. However, affected by the intrinsic overlapping between rain streaks and background texture patterns, most of these methods tend to more or less remove texture details in rain-free regions and lead oversmoothing effect in the recovered background. In order to generate reasonable rain streak layer and improve reconstruc- tion quality of background, we propose a distributed feedback network (DFN) in recurrent structure. A novel feedback block is designed to implement feedback mechanism. In each feedback block, hidden state with high-level information (output) will flow into the next iteration to correct the low-level representations (input). By stacking multiple feedback blocks, the proposed network where the hidden states are distributed can extract powerful high- level representations for rain streak layer. Curriculum learning is employed to connect the loss of each iteration and ensure hidden states contain the notion of output. In addition, a self-ensemble strategy for rain removal task which can keep the vertical character of rain streak is explored to maximize the potential performance of deraining model. Extensive experimental results demonstrate the superiority of DFN in comparison with the state- of-the-art methods.
 
 ![image](https://github.com/Guhuary/DFN/blob/main/structure.png)
 
@@ -13,7 +13,7 @@ Recently, deep convolutional neural network has achieved great success for singl
 *MATLAB for calculating PSNR and SSIM 
 
 ## Datasets
-DFN is trained and tested on five datasets: Rain100L[1],Rain100H[1],RainLight[2],RainHeavy[2],Rain12[3]. It is worth mentioning that several the state-of-the-arts were trained on a strict Rain100H, which contains 1254 pairs of images. We re-trained these competing methods on whole Rain100H.
+DFN is trained and tested on five benchamark datasets: Rain100L[1],Rain100H[1],RainLight[2],RainHeavy[2] and Rain12[3]. It should be noted that DFN is trained on strict 1,254 images for Rain100H.
 
 *Note: 
 
