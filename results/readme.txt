@@ -1,0 +1,1 @@
+Please place the generated results into `./results/`, and then you can directly compute all the evaluation metrics using Matlab scripts in `./statistic/`
