@@ -61,7 +61,7 @@ Rain12|32.02/0.855|31.78/0.900|29.45/0.938|-|34.02/0.935|36.66/0.961|36.74/0.959
 If you find our research or code useful for you, please cite our paper:
 
 ```
-	@article{DING2021,
+@article{DING2021,
 	title = {Distributed Feedback Network for Single-Image Deraining},
 	journal = {Information Sciences},
 	year = {2021},
@@ -69,5 +69,5 @@ If you find our research or code useful for you, please cite our paper:
 	doi = {https://doi.org/10.1016/j.ins.2021.02.080},
 	url = {https://www.sciencedirect.com/science/article/pii/S0020025521002371},
 	author = {Jiajun Ding and Huanlei Guo and Hang Zhou and Jun Yu and Xiongxiong He and Bo Jiang}
-	}
+}
 ```
